@@ -20,7 +20,7 @@ header {
     box-shadow: 1px .5px 0.5px rgba(0, 0, 0, 0.445);
 }
 header .logo {
-    background-image: url('./img/Bandeira_de_Recife.png');
+    background-image: url('../img/Bandeira_de_Recife.png');
     background-repeat: no-repeat;
     background-position: center;
     height: 135px;
@@ -44,72 +44,53 @@ nav > ul > li > a:hover {
 main {
     width: 1000px;
     height: auto;
-    display: flex;
     margin: auto;
     box-shadow: 1px 1px 2px #00000077;
 }
-main > section {
-    flex: 1.5;
+main > article {
     padding: 20px;
 }
-main > section h1 {
+main > article h1 {
     font-size: 35px;
     font-weight: bold;
     background-image: linear-gradient(to right,  #5555557a, transparent)
 }
-main > section h2 {
-    font-size: 25px;
-    font-weight: 700;
-    background-image: linear-gradient(to right, #5555557a, transparent)
+.imagens {
+    display: flex;
+    justify-content: space-around;
+    /* flex-direction: row; */
 }
-main > section p {
+.imagens .um,
+.imagens .dois,
+.imagens .tres {
+    height: 300px;
+    margin-right: 10px;
+}
+.imagens .um {
+    flex: 1;
+    background-image: url('../img/marcoZero1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.imagens .dois {
+    flex: 1;
+    background-image: url('../img/marcozero2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.imagens .tres {
+    flex: 1;
+    background-image: url('../img/marcoZero3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main > article p {
     text-align: justify;
     text-indent: 10px;
     margin: 20px 0;
-}
-main > aside {
-    flex: 1;
-    display: flex;
-}
-main > aside > section > div {
-    margin-bottom: 5px;
-    height: 250px;
-}
-main > aside > section > div > p {
-    text-align: center;
-    background-image: linear-gradient(to right, #5555557a, transparent)
-}
-.um,
-.dois,
-.tres,
-.quatro {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-}
-.um .img {
-    flex: 1;
-    background-image: url('./img/Praca-do-Maraco-Zero.webp');
-    background-position: center;
-    background-size: cover;
-}
-.dois .img {
-    flex: 1;
-    background-image: url('./img/oficina-ceramica-francisco.jpg');
-    background-position: center;
-    background-size: cover;
-}
-.tres .img {
-    flex: 1;
-    background-image: url('./img/forte\ das\ cincos\ pontas.jpg');
-    background-position: center;
-    background-size: cover;
-}
-.quatro .img {
-    flex: 1;
-    background-image: url('./img/praia-de-boa-viagem-2023.jpg');
-    background-position: center;
-    background-size: cover;
 }
 footer {
     background-color: #14213d;
@@ -126,6 +107,9 @@ footer > div {
 footer p  a {
     text-decoration: none;
     color: #fff;
+}
+footer p {
+    margin-right: 40px;
 }
 footer p  a:hover {
     color: #000;
