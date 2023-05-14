@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+:root{
+    --cor1: #354f52;
+    --cor2: #2f3e46;
+
+}
+* {
+    margin: 0;
+    top: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+a:hover {
+    color: #000;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--cor1);
+    color: #fff;
+    height: 100px;
+    width: 100%;
+}
+.logo {
+    background-image: url('../img/union.jpg');
+    height: 90px;
+    width: 200px;
+}
+header ol > li {
+   display: inline-block;
+   margin-left: 10px;
+   padding: 10px;
+   text-transform: uppercase;
+}
+main {
+    width: 1000px;
+    margin: auto;
+    box-shadow: 1px 1px 2px var(--cor1);
+    padding: 10px;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+section > div {
+    height: 400px;
+    width: 450px;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+section > div > h2 {
+    color: var(--cor1);
+    text-align: center;
+}
+#um,
+#dois,
+#tres,
+#quatro {
+    display: flex;
+    flex-direction: column;
+}
+#um .img {
+    flex: 1;
+    background-image: url('./img/barcelona\ \(2\).jpg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+#dois .img {
+    flex: 1;
+    background-image: url('./img/lisboa.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+#tres .img {
+    flex: 1;
+    background-image: url('./img/londres.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+#quatro .img {
+    flex: 1;
+    background-image: url('./img/paris.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+footer {
+    background-color: var(--cor2);
+    color: #fff;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+}
